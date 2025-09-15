@@ -18,3 +18,36 @@ header a {
   color: #000;
   font-weight: bold;
 }
+
+.catalog { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; padding: 20px;
+} 
+
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem; 
+  border-radius: 6px;
+  background: white; 
+} 
+
+.product h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; 
+} 
+
+.product .price {
+  font-weight: bold;
+  margin-bottom: 1rem; 
+}
+
+.product button { 
+  background: #333; 
+  color: white; 
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
