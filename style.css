@@ -1,59 +1,93 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  background: #f5f0e6;
   margin: 0;
   padding: 0;
-  background: #fafafa;
-  color: #333;
+  color: #4b3f2f;
 }
 
 header {
-  background: #ddd;
-  padding: 1rem;
+  background: #a67c52;
+  color: #3a2c1f;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header a {
+  color: #3a2c1f;
   text-decoration: none;
-  color: #000;
   font-weight: bold;
 }
 
-.catalog { 
+button {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.catalog {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px; padding: 20px;
-} 
-
-.product {
-  border: 1px solid #ccc;
-  padding: 1rem; 
-  border-radius: 6px;
-  background: white; 
-} 
-
-.product h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem; 
-} 
-
-.product .price {
-  font-weight: bold;
-  margin-bottom: 1rem; 
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; 
 }
 
-.product button { 
-  background: #333; 
-  color: white; 
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
+.product {
+  background: #f5f0e6;
+  border: 1px solid #d1bfa3;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .product img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: contain;
-  margin-bottom: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.product h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #4b3f2f;
+}
+
+.product .price {
+  color: #3a2c1f;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.product button {
+  background: #8b5e3c;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #8b5e3c;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.toast.show {
+  opacity: 1;
 }
