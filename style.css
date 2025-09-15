@@ -178,3 +178,8 @@ button {
     padding: 0.8rem;
     font-size: 1rem;
   }
+
+  #order-form {
+    width: 90%;
+    padding: 1rem; 
+  }
