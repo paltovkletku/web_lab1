@@ -152,3 +152,29 @@ button {
 #order-form button:hover {
   background: #b0885f;
 }
+
+
+@media (max-width: 600px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+
+  .product h3 {
+    font-size: 1.2rem;
+  }
+
+  .product .price {
+    font-size: 1.1rem;
+  }
+
+  .product button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
