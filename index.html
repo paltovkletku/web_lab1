@@ -2,70 +2,69 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Абзац! Каталог книг</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог книг</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Абзац! Книги</h1>
+    <h1>Абзац!</h1>
     <nav>
-      <a href="cart.html">Корзина</a>
+      <a href="cart.html">Товары в корзине</a>
     </nav>
   </header>
 
-  <main>
-    <section class="catalog">
+  <main class="catalog">
+    <article class="product" data-id="1" data-title="Улисс. Том 2" data-price="500" data-image="https://imo10.labirint.ru/books/678636/cover.jpg/242-0">
+      <img src="https://imo10.labirint.ru/books/678636/cover.jpg/242-0" alt="Улисс">
+      <h3>Улисс. Том 2</h3>
+      <p class="price">500 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://imo10.labirint.ru/books/678636/cover.jpg/242-0" alt="Улисс. Том 2">
-        <h2>Улисс. Том 2</h2>
-        <p class="price">500 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
+    <article class="product" data-id="2" data-title="Мастер и Маргарита" data-price="400" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABDqO0Vq-b6AKHO9yMx3pDtghjzNMttfzXg&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABDqO0Vq-b6AKHO9yMx3pDtghjzNMttfzXg&s">
+      <h3>Мастер и Маргарита</h3>
+      <p class="price">400 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABDqO0Vq-b6AKHO9yMx3pDtghjzNMttfzXg&s" alt="Мастер и Маргарита">
-        <h2>Мастер и Маргарита</h2>
-        <p class="price">400 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
+    <article class="product" data-id="3" data-title="Преступление и наказание" data-price="350" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuEx51iJhl-wUWe94aRPvf3a5MuNAQVetBA&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuEx51iJhl-wUWe94aRPvf3a5MuNAQVetBA&s">
+      <h3>Преступление и наказание</h3>
+      <p class="price">350 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuEx51iJhl-wUWe94aRPvf3a5MuNAQVetBA&s" alt="Преступление и наказание">
-        <h2>Преступление и наказание</h2>
-        <p class="price">350 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
+    <article class="product" data-id="4" data-title="Нетерпение сердца" data-price="400" data-image="https://ndc.book24.ru/resize/410x590/pim/products/images/58/e0/018fa18c-1838-7cc8-b83b-ccd81f2858e0.jpg">
+      <img src="https://ndc.book24.ru/resize/410x590/pim/products/images/58/e0/018fa18c-1838-7cc8-b83b-ccd81f2858e0.jpg">
+      <h3>Нетерпение сердца</h3>
+      <p class="price">400 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://ndc.book24.ru/resize/410x590/pim/products/images/58/e0/018fa18c-1838-7cc8-b83b-ccd81f2858e0.jpg" alt="Нетерпение сердца">
-        <h2>Нетерпение сердца</h2>
-        <p class="price">400 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
+    <article class="product" data-id="5" data-title="Великий Гэтсби" data-price="500" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0i5eltkntWryFwiKjP2WNKS7g7SFFut-tMg&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0i5eltkntWryFwiKjP2WNKS7g7SFFut-tMg&s">
+      <h3>Великий Гэтсби</h3>
+      <p class="price">500 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0i5eltkntWryFwiKjP2WNKS7g7SFFut-tMg&s" alt="Великий Гэтсби">
-        <h2>Великий Гэтсби</h2>
-        <p class="price">500 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
+    <article class="product" data-id="6" data-title="По эту сторону рая" data-price="450" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtV4UnkD7mpWtwTqHo_w36hOcOg-CmRgXqA&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtV4UnkD7mpWtwTqHo_w36hOcOg-CmRgXqA&s">
+      <h3>По эту сторону рая</h3>
+      <p class="price">450 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
 
-      <article class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtV4UnkD7mpWtwTqHo_w36hOcOg-CmRgXqA&s" alt="По эту сторону рая">
-        <h2>По эту сторону рая</h2>
-        <p class="price">450 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
-
-      <article class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0kOdh2ZRhuhOwkE77YyleQpqnfb18CVxQg&s" alt="Дама с камелиями">
-        <h2>Дама с камелиями</h2>
-        <p class="price">350 руб.</p>
-        <button>Добавить в корзину</button>
-      </article>
-
-    </section>
+    <article class="product" data-id="7" data-title="Дама с камелиями" data-price="350" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0kOdh2ZRhuhOwkE77YyleQpqnfb18CVxQg&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0kOdh2ZRhuhOwkE77YyleQpqnfb18CVxQg&s">
+      <h3>Дама с камелиями</h3>
+      <p class="price">350 руб.</p>
+      <button class="add-to-cart">Добавить в корзину</button>
+    </article>
   </main>
+
+  <div id="toast" class="toast">Товар добавлен!</div>
 </body>
 </html>
