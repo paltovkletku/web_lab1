@@ -8,14 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (cart.some(item => item.id === id)) {
       btn.textContent = "Товар в корзине";
-      btn.disabled = true;
+      btn.disabled = false;
       btn.classList.add("in-cart");
+      btn.addEventListener("click", () => {
+        window.location.href = "cart.html";
+    });
     } else {
       btn.addEventListener("click", () => {
         addToCart(product);
         btn.textContent = "Товар в корзине";
-        btn.disabled = true;
+        btn.disabled = false;
         btn.classList.add("in-cart");
+        btn.addEventListener("click", () => {
+          window.location.href = "cart.html";
+      });
 
       });
     }
