@@ -84,6 +84,14 @@ function renderCart() {
   cartContainer.innerHTML = "";
   let total = 0;
 
+  if (cart.length === 0) {
+    cartEmpty.style.display = "block";
+    cartTotal.textContent = "";
+    return;
+  } else {
+    cartEmpty.style.display = "none"; 
+  }
+
   cart.forEach((item, index) => {
     const line = document.createElement("div");
     line.classList.add("cart-item");
