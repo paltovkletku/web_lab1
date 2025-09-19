@@ -140,6 +140,13 @@ button {
   color: #3a2c1f;
 }
 
+.cart-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 1rem 0;
+  display: none;
+}
 
 #order-form {
   margin: 2rem auto;
