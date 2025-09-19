@@ -78,6 +78,7 @@ function renderCart() {
   let cart = getCart();
   const cartContainer = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
+  const cartEmpty = document.getElementById("cart-empty");
 
   if (!cartContainer) return;
 
